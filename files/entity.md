@@ -7,24 +7,31 @@ components and events.
 Components are further broken down into "permanent" components,
 always active and component groups, which can be toggled on and 
 off by various events and behaviours.
+* `minecraft:entity` - Denotes this is entity data
+  * `format_version` - The version value for the entity data, used to let the game know what type of data will be found, always 0.1 right now
+  * `components` - A key-value set of components, each key is a component name, and the parameters are it's value
+  * `component_groups` - A key-value set, denoting groups of components that can be added/removed together
+  * `events` - A key-balue set of events, containing actions to perform when the event is fired.
 
 ````json
 {
-    "format_version": 0.1, //Always 0.1, will increment in future probably
+    "minecraft:entity":{
+    "format_version": 0.1,
     "components":{
         "component_name":{ "param1":"value"}
-    }, //A map of components, the key is the component name, and value is the parameters
-    "component_groups": { //A group of components, the key is the name for that component group
+    },
+    "component_groups": {
         "group_name":{
             "component_name":{ "param1":"value"}
         } 
     },
-    "events":{ //Ties actions to events
-        "event_name":{ //The name of an event
-            "event_action":{ //An action to perform for an event
-                    "action_param": "value" // A parameter for that event
+    "events":{ 
+        "event_name":{ 
+            "event_action":{ 
+                    "action_param": "value" 
             }
         }
     }
+}
 }
 ````

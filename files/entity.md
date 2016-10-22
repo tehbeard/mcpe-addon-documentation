@@ -11,7 +11,7 @@ off by various events and behaviours.
   * `format_version` - The version value for the entity data, used to let the game know what type of data will be found, always 0.1 right now
   * `components` - A key-value set of components, each key is a component name, and the parameters are it's value
   * `component_groups` - A key-value set, denoting groups of components that can be added/removed together
-  * `events` - A key-balue set of events, containing actions to perform when the event is fired.
+  * `events` - A key-value set of events, containing actions to perform when the event is fired.
 
 ````json
 {

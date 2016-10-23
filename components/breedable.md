@@ -5,7 +5,7 @@ This component makes the entity able to make babies
 ## Parameters
 
 * `requireTame: boolean` - Entity must be tamed before hand (requires: tameable component?)
-* `inheritTamed: boolean` - Baby is also tame?
+* `inheritTamed: boolean` - The baby is born already tamed or not
 * `breedsWith: Object[]` - list of entities it can breed with, and what that breeding produces
   E.g. for a donkey, breeding with a donkey = a donkey, while breeding with a horse makes a mule instead
   ````json
@@ -28,8 +28,8 @@ This component makes the entity able to make babies
         }
       ]
   ````
-* `breedItems: String[]` - List of items that can make the entity go into breeding mode.
-* `mutation_factor: Object` - UNKNOWN, found on rabbits
+* `breedItems: String[]` - List of items that can make the entity go into breeding mode
+* `mutation_factor: Object` - A percentage for the babies to be born with a different skin than the parents ones? (found on rabbits)
   ````json
   {
      "variant": 0.2

@@ -1,6 +1,6 @@
 # healable
 
-This component makes you heal mobs by smashing items in their face.
+This component makes you heal mobs by giving them determined items.
 
 ## Parameters
 

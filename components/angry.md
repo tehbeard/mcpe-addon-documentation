@@ -5,9 +5,9 @@ This component seems to be tied to mob "angriness" and swarm behaviours, such as
 ## Parameters
 
 * `duration: int` - number of ticks to be angry once triggered?
-* `broadcastAnger: boolean` - Trigger anger in other nearby mobs?
-* `broadcastRange: int` - range in pixels? to broadcast to
-* `calm_event: Object` - Settings for event to trigger when mob is no longer angry
+* `broadcastAnger: boolean` - Trigger anger in the nearby same mobs.
+* `broadcastRange: int` - Range in a determined radius to trigger anger to the same mobs that are in the range.
+* `calm_event: Object` - Settings for event to trigger when mob is no longer angry.
     ````json
     {
         "event": "event_name",
